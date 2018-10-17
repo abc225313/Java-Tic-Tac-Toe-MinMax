@@ -30,17 +30,21 @@ public class Think {
 					}
 				}
 				else if (cheeseborad[1]==1||cheeseborad[3]==1||cheeseborad[5]==1||cheeseborad[7]==1) {
-					if(cheeseborad[0]==0){
-						choice.add(0);
-					}
-					if(cheeseborad[2]==0){
+					if(cheeseborad[1]==1){
 						choice.add(2);
+						choice.add(8);
 					}
-					if(cheeseborad[6]==0){
+					else if(cheeseborad[3]==1){
+						choice.add(2);
+						choice.add(8);
+					}
+					else if(cheeseborad[5]==1){
+						choice.add(0);
 						choice.add(6);
 					}
-					if(cheeseborad[8]==0){
-						choice.add(8);
+					else if(cheeseborad[7]==1){
+						choice.add(0);
+						choice.add(6);
 					}
 					int index = random.nextInt(choice.size());
 					cheeseborad[choice.get(index)]=2;
