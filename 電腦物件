@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.Random;
-//Author:資管二乙 陳冠霖
-//老師實在抱歉,寄了兩次有錯誤的內容給您 這次我檢查一天了 應該不會出錯!
 
 public class Think {
 	ArrayList<Integer>choice;
